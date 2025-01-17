@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.79, maximum-scale=1.0, user-scalable=0">
   <link href="./output.css" rel="stylesheet">
   <title>Netflix Germany - Watch TV Shows Online, Watch Movies Online</title>
   <link rel="icon" href="../Media/Favicon.png">
@@ -18,12 +18,17 @@
     <div class=" h-[95vh] w-[100%] z-[-5] absolute"
       style="background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));"></div>
   </div>
-  <nav class="flex w-[80vw] z-20 m-auto h-[10vh] justify-between p-4 pt-7  ">
+  <!-- <nav class="flex w-[80vw] z-20 m-auto h-[11vh] justify-between border-2 border-white ">
+    <div class=" sm:w-[150px] w-[200px]">
 
-    <img src="../Media/logo.svg" alt="Logo" class="box-border">
+      <img src="../Media/logo.svg" alt="Logo" class="box-border">
+    </div>
     <div class="flex gap-7">
-      <div class="bg-transparent border-gray-500 border-[1px] rounded-md  flex pr-4 pl-4 justify-around">
-        <img src="../Media/Language.svg" alt="Lang" class="m-1">
+      <div class="bg-transparent border-gray-500 border-[1px] rounded-md pr-4 pl-4 justify-around  hidden sm:flex">
+        
+
+          <img src="../Media/Language.svg" alt="Lang" class="m-1">
+        
 
         <select name="Language" id="Lang" class="bg-transparent text-white">
 
@@ -31,16 +36,42 @@
           <option value="Deutsch" class="text-black">Deutsch</option>
         </select>
       </div>
-      <button class="text-white font-bold bg-red-600 rounded-md  w-[90px]">Sign In</button>
+      <button class="text-white font-bold bg-red-600 rounded-md w-[90px]">Sign In</button>
     </div>
 
+  </nav> -->
+  <nav>
+    <div class="flex justify-between w-[80%] m-auto pt-8 items-center">
+      <div class="border-2 border-white sm:h-[89px] sm:w-[220px] flex h-[40px] w-[80px] ">
+        <img src="../Media/logo.svg" alt="logo items-center">
+      </div>
+      <div class="flex gap-8">
+        <div class="flex border-gray-600 border-2 items-center h-[40px] rounded-lg">
+          <div>
+            <img src="../Media/Language.svg" alt="lang">
+          </div>
+          <div>
+            <select name="language" id="lang" class="bg-transparent text-white">
+              <option value="English" selected>English</option>
+              <option value="Deutsch">Deutsch</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <button class="bg-red-600 text-white h-[40px] w-[80px] rounded-lg ">Sign In</button>
+        </div>
+      </div>
+
+    </div>
   </nav>
   <div class="z-20 text-white  w-[60vw] m-auto items-center flex flex-col gap-4 h-[65vh] justify-center ">
     <p class="font-bold text-5xl mt-28"> Unlimited movies, TV shows, and more</p>
     <p class="text-2xl">Watch anywhere. Cancel anytime.</p>
     <p class="text-xl">Ready to watch? Enter your email to create or restart your membership.</p>
     <div class="flex gap-3  w-[38vw] h-[7vh] justify-between">
-      <input type="text" name="Email" id="Email" placeholder="Email Address" class="p-2 rounded-md text-black border-[1px] border-gray-500 w-[25vw]" style="background-color: rgb(0, 0, 0, 0.6);">
+      <input type="text" name="Email" id="Email" placeholder="Email Address"
+        class="p-2 rounded-md text-white border-[1px] border-gray-500 w-[25vw]"
+        style="background-color: rgb(0, 0, 0, 0.6);">
       <button class="text-2xl font-bold bg-red-600 p-1 w-[15vw] text-center"> Get Started &rarr;</button>
     </div>
   </div>
@@ -114,7 +145,8 @@
 
     <div class="p-2 w-[600px] relative z-20  pb-10">
       <img src="../Media/mobile-0819.jpg" alt="" class="h-full w-auto ">
-      <div class="absolute border-2 border-gray-500 rounded-xl bg-contain p-2 flex bg-black h-[12vh] w-[20vw] justify-between gap-3 translate-x-[8.5em] translate-y-[-9rem]">
+      <div
+        class="absolute border-2 border-gray-500 rounded-xl bg-contain p-2 flex bg-black h-[12vh] w-[20vw] justify-between gap-3 translate-x-[8.5em] translate-y-[-9rem]">
         <img src="../Media/boxshot.png" alt="">
         <div class="m-auto">
           <p class="text-white font-bold">Stranger Things</p>
@@ -123,7 +155,7 @@
         <img src="../Media/download-icon.gif" alt="icon" class=" h-[50px] w-auto m-auto">
 
       </div>
-      
+
 
     </div>
     <div class="text-white flex flex-col gap-3 justify-center  h-full w-auto">
